@@ -1,0 +1,17 @@
+<div class="main-container">
+  <app-header class="header"></app-header>
+  <form class="login-form">
+    <h3>Shorten your URL</h3>
+    <label for="url">URL</label>
+    <input type="text" #url id="url" placeholder="https://example.com" />
+    <label for="value">New URL</label>
+    <input type="text" #value id="value" placeholder="gogl" />
+    <input
+      type="submit"
+      id="submit"
+      value="Shorten"
+      (click)="handleClick($event, url.value, value.value)"
+    />
+  </form>
+  <h3>{{ name }}</h3>
+</div>

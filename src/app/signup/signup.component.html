@@ -1,0 +1,32 @@
+<div class="main-container">
+  <app-header class="header"></app-header>
+  <form class="login-form">
+    <h3>Signup</h3>
+    <h6>Already have an account?, login</h6>
+    <label for="name">Name</label>
+    <input type="text" #name id="name" placeholder="John Doe" />
+    <label for="email">Email</label>
+    <input type="text" #email id="email" placeholder="johndoe@example.com" />
+    <label for="password">Password</label>
+    <input type="password" #password id="password" />
+    <label for="cPassword">Confirm Password</label>
+    <input type="password" #cPassword id="cPassword" />
+    <div class="form-action">
+      <input
+        type="submit"
+        id="signup"
+        value="Signup"
+        (click)="
+          handleClick(
+            $event,
+            name.value,
+            email.value,
+            password.value,
+            cPassword.value
+          )
+        "
+      />
+      <input type="submit" id="login" value="Login" (click)="handleRoute()" />
+    </div>
+  </form>
+</div>

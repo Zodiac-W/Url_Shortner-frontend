@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+}
+.header {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55247;
+  border-radius: 10px;
+  padding: 40px;
+  color: #fff;
+  width: 450px;
+}
+
+.login-form h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.login-form h6 {
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 1.1px;
+}
+.login-form label {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  letter-spacing: 1.6px;
+}
+.login-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+.form-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex: 1; */
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form-action input {
+  width: 48%;
+  background-color: #fff;
+  color: #f55247;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-action input:hover {
+  background-color: #eee;
+  color: #dc493e;
+}

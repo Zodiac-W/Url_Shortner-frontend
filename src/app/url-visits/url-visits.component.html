@@ -1,0 +1,15 @@
+<div class="main-container">
+  <app-header class="header"></app-header>
+  <form class="login-form">
+    <h3>Shorten your URL</h3>
+    <label for="url">URL</label>
+    <input type="text" #url id="url" placeholder="https://example.com" />
+    <input
+      type="submit"
+      id="submit"
+      value="How many times was it visited?"
+      (click)="handleClick($event, url.value)"
+    />
+  </form>
+  <h3>{{ visits }}</h3>
+</div>

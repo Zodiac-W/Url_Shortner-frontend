@@ -1,0 +1,11 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  align-items: center;
+}
+.header {
+  font-weight: 700;
+  font-size: 24px;
+}
